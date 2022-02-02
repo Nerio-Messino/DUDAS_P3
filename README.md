@@ -16,7 +16,7 @@ Practicar con expresiones básicas, variables, asignaciones, if…else, switch�
 En esta entrega vamos a desarrollar una aplicación web de calculadora. Para comenzar el desarrollo partimos de la versión básica de la calculadora, cuyo código se proporciona al alumno. Las instrucciones para obtener este código están en el siguiente apartado. Sobre éste, el alumno tendrá que implementar las operaciones que faltan, las cuales se indican en el apartado "Tareas".
 
 <p align="center">
-  <img width="187" height="264" style="border: 1px solid grey;" src="https://sonsoleslp.neocities.org/screenshot.png">
+  <img width="187" height="264" style="border: 1px solid grey;" src="https://kikeservicenow.neocities.org/Captura.PNG">
 </p>
 
 ## Descargar el código del proyecto
