@@ -39,10 +39,10 @@ Para superar esta entrega, el alumno tendrá que implementar las siguientes func
 
 ### 1. Desarrollo de página básica y campo input:
 * Cree en el directorio del proyecto un archivo nuevo y pongale el nombre "index.html". En dicho archivo cree la estructura básica de una página HTML y en el body añada un campo input de tipo texto y de id "pantalla".
-* Junto a este campo input añada un button de id "cuadrado" que llama a una función de nombre cuadrado() que calcula el cuadrado del número que el usuario ha escrito en el campo input.
+* Añada un botón (button) que tenga el id "cuadrado" que llama a una función de nombre cuadrado() que calcula el cuadrado del número que el usuario ha escrito en el campo input y escribe el resultado en el mismo input.
 
 ### 2. Operaciones unitarias:
-  * Añada un nuevo botón a la calculadora junto al que ya tiene. Este botón tendrá un id &quot;factorial&quot; y llamará a una función fact() que debe crear usted. Dicha función calcula el factorial del número X introducido en el input. Factorial = X\*(X-1)\*(X-2)\*…\*3\*2\*1, (calcularlo con un bucle for)
+  * Añada un nuevo botón a la calculadora. Este botón tendrá un id &quot;factorial&quot; y llamará a una función fact(). Dicha función calcula el factorial del número X introducido en el input y pone el resultado del cálculo en el mismo input. Factorial = X\*(X-1)\*(X-2)\*…\*3\*2\*1, (calcularlo con un bucle for)
 
 ### 3. Operaciones binarias:
 Las operaciones binarias (suma, resta, multiplicación, división, resto y potencia) consisten en dos operandos, un operador y se debe pulsar el signo igual para obtener el resultado. El funcionamiento sería como el de cualquier calculadora. Se introduce un primer número, se pulsa la operación, se introduce un segundo número y se pulsa el signo igual.
@@ -53,16 +53,16 @@ Consejos para el desarrollo: Tenemos dos pulsaciones a botones. Primera, al puls
 
 ### 4. Operaciones en formato CSV (Comma Separated Values)
 
-La calculadora debe incluir operaciones con varios operandos en formato CSV, es decir valores separados por comas, por ejemplo &quot;5,7,9,1&quot;. Añada cuatro nuevos botones, uno para hacer el sumatorio, otro que ordena la lista de números provista, otro que invierte la lista y un último que quita los dos últimos elementos.
+La calculadora debe incluir operaciones con varios operandos en formato CSV, es decir valores separados por comas, por ejemplo &quot;5,7,9,1&quot;.
 
-  * El botón 'sumatorio' tiene que tener un id &quot;sumatorio&quot; y llamar a una función sumatorio() que calcula la suma de los elementos introducidos en el input. Para un input relleno con &quot;5,7,9,1&quot; al hacer click en el botón &quot;sumatorio&quot; el input pasaría a tener el valor 22 (la suma de todos los números 5+7+9+1).
+  * Añada un nuevo botón 'sumatorio' tiene que tener un id &quot;sumatorio&quot; y llamar a una función sumatorio() que calcula la suma de los elementos introducidos en el input. Para un input relleno con &quot;5,7,9,1&quot; al hacer click en el botón &quot;sumatorio&quot; el input pasaría a tener el valor 22 (la suma de todos los números 5+7+9+1).
 
 
 ### 5. Campo informativo:
 
 Añada al documento HTML un nuevo elemento mediante la etiqueta 	&lt;h2&gt; con identificador &quot;info&quot;, clase &quot;grande&quot;, un atributo &quot;title&quot; con valor &quot;Info sobre el número&quot; y contenido inicialmente &quot;Info sobre el número&quot;.
 
-El contenido de dicho elemento &lt;h2&gt; se debe actualizar cada vez que se hace un cálculo en la calculadora. En este primer paso tan solo tenemos la función &quot;cuadrado&quot;, así que solo se actualizará el campo informativo cuando el usuario haga click en el botón &quot;cuadrado&quot;. Su contenido debe ser &quot;Info: El resultado es menor que 100&quot;, &quot;Info: El resultado está entre 100 y 200&quot; o &quot;Info: El resultado es superior a 200&quot; según sea el resultado del cálculo que muestre el input.
+El contenido de dicho elemento &lt;h2&gt; se debe actualizar cada vez que se hace un cálculo en la calculadora. Su contenido debe ser &quot;Info: El resultado es menor que 100&quot;, &quot;Info: El resultado está entre 100 y 200&quot; o &quot;Info: El resultado es superior a 200&quot; según sea el resultado del cálculo que muestre el input.
 
 Recomendamos hacer esta funcionalidad en una función específica (de nombre por ejemplo rellenar_info) que llamemos cada vez que sea necesario, así se rellenará la información para todas las operaciones desarrolladas.
 
