@@ -1,6 +1,5 @@
 
 <img  align="left" width="150" style="float: left;" src="https://www.upm.es/sfs/Rectorado/Gabinete%20del%20Rector/Logos/UPM/CEI/LOGOTIPO%20leyenda%20color%20JPG%20p.png">
-<img  align="right" width="60" style="float: right;" src="http://www.dit.upm.es/figures/logos/ditupm-big.gif">
 
 <br/><br/><br/>
 
@@ -38,21 +37,14 @@ $ cd P3_Calculadora_JS
 
 Para superar esta entrega, el alumno tendrá que implementar las siguientes funcionalidades:
 
-### 1. Campo informativo:
-
-Añada al documento HTML un nuevo elemento mediante la etiqueta 	&lt;h2&gt; con identificador &quot;info&quot;, clase &quot;grande&quot;, un atributo &quot;title&quot; con valor &quot;Info sobre el número&quot; y contenido inicialmente &quot;Info sobre el número&quot;.
-
-El contenido de dicho elemento &lt;h2&gt; se debe actualizar cada vez que se hace un cálculo en la calculadora. En este primer paso tan solo tenemos la función &quot;cuadrado&quot;, así que solo se actualizará el campo informativo cuando el usuario haga click en el botón &quot;cuadrado&quot;. Su contenido debe ser &quot;Info: El resultado es menor que 100&quot;, &quot;Info: El resultado está entre 100 y 200&quot; o &quot;Info: El resultado es superior a 200&quot; según sea el resultado del cálculo que muestre el input.
-
-Aunque en esta primera funcionalidad solo hay una funcionalidad en la calculadora, el resto de apartados pedirá que se realicen más botones en la calculadora y el campo informativo debe seguir funcionando, esto es, mostrando un mensaje u otro según el resultado del cálculo ejecutado. Así que recomendamos hacer esta funcionalidad en una función específica (de nombre por ejemplo rellenar_info) que llamemos cada vez que sea necesario.
+### 1. Desarrollo de página básica y campo input:
+* Cree en el directorio del proyecto un archivo nuevo y pongale el nombre "index.html". En dicho archivo cree la estructura básica de una página HTML y en el body añada un campo input de tipo texto y de id "pantalla".
+* Junto a este campo input añada un button de id "cuadrado" que llama a una función de nombre cuadrado() que calcula el cuadrado del número que el usuario ha escrito en el campo input.
 
 ### 2. Operaciones unitarias:
-  * Añada un nuevo botón a la calculadora junto al que ya tiene. Este botón tendrá un id &quot;modulo&quot; y llamará a una función mod() que debe crear usted. Dicha función calcula el módulo del número X introducido en el input, es decir si es número es positivo lo deja como está y si es negativo devuelve como resultado -X
-
   * Añada un nuevo botón a la calculadora junto al que ya tiene. Este botón tendrá un id &quot;factorial&quot; y llamará a una función fact() que debe crear usted. Dicha función calcula el factorial del número X introducido en el input. Factorial = X\*(X-1)\*(X-2)\*…\*3\*2\*1, (calcularlo con un bucle for)
 
 ### 3. Operaciones binarias:
-
 Las operaciones binarias (suma, resta, multiplicación, división, resto y potencia) consisten en dos operandos, un operador y se debe pulsar el signo igual para obtener el resultado. El funcionamiento sería como el de cualquier calculadora. Se introduce un primer número, se pulsa la operación, se introduce un segundo número y se pulsa el signo igual.
 
 Consejos para el desarrollo: Tenemos dos pulsaciones a botones. Primera, al pulsar cualquier operador binario, debe invocarse una función, que guarde en variables globales, tanto el número tecleado en el input, como un string indicando el operador pulsado (las variables globales son visibles dentro de todas las funciones del script y puedan utilizarse para pasar valores de una función a otra). Al pulsar el botón con el signo &quot;_=&quot;_ debe invocarse una nueva función que calcule el resultado, realizando la operación indicada por el operador guardado, utilizando el primer número (guardado en la variable global) y el segundo número que debe estar en el input.
@@ -65,14 +57,16 @@ La calculadora debe incluir operaciones con varios operandos en formato CSV, es 
 
   * El botón 'sumatorio' tiene que tener un id &quot;sumatorio&quot; y llamar a una función sumatorio() que calcula la suma de los elementos introducidos en el input. Para un input relleno con &quot;5,7,9,1&quot; al hacer click en el botón &quot;sumatorio&quot; el input pasaría a tener el valor 22 (la suma de todos los números 5+7+9+1).
 
-  * El botón 'ordenar' tiene que tener un id &quot;ordenar&quot; y llamar a una función ordenar() que ordena (en orden ascendente) los elementos introducidos en el input. Para un input relleno con &quot;5,7,9,1&quot; al hacer click en el botón &quot;ordenar&quot; el input pasaría a tener el valor &quot;1,5,7,9&quot;.
-  Cuidado en esta función ya que el método sort() de los arrays en JavaScript ordena strings con lo que 100 será menor que 2. Es necesario pasarle a la función sort() como callback una función que haga la comparación con números (ver: [https://alligator.io/js/array-sort-numbers/](https://alligator.io/js/array-sort-numbers/)).
 
-  * El botón 'revertir' tiene que tener un id &quot;revertir&quot; y llamar a una función revertir() que invierte el orden de los elementos introducidos en el input. Para un input relleno con &quot;5,7,9,1&quot; al hacer click en el botón &quot;revertir&quot; el input pasaría a tener el valor &quot;1,9,7,5&quot;.
+### 5. Campo informativo:
 
-  * El botón 'quitar' tiene que tener un id &quot;quitar&quot; y llamar a una función quitar() que quita el último número y la coma de los introducidos en el input. Para un input relleno con &quot;5,7,9,1&quot; al hacer click en el botón &quot;quitar&quot; el input pasaría a tener el valor &quot;5,7,9&quot;, para un input &quot;43,2,256,4543&quot; quedaría &quot;43,2,256&quot;.
+Añada al documento HTML un nuevo elemento mediante la etiqueta 	&lt;h2&gt; con identificador &quot;info&quot;, clase &quot;grande&quot;, un atributo &quot;title&quot; con valor &quot;Info sobre el número&quot; y contenido inicialmente &quot;Info sobre el número&quot;.
 
-### 5. Tratamiento de errores
+El contenido de dicho elemento &lt;h2&gt; se debe actualizar cada vez que se hace un cálculo en la calculadora. En este primer paso tan solo tenemos la función &quot;cuadrado&quot;, así que solo se actualizará el campo informativo cuando el usuario haga click en el botón &quot;cuadrado&quot;. Su contenido debe ser &quot;Info: El resultado es menor que 100&quot;, &quot;Info: El resultado está entre 100 y 200&quot; o &quot;Info: El resultado es superior a 200&quot; según sea el resultado del cálculo que muestre el input.
+
+Recomendamos hacer esta funcionalidad en una función específica (de nombre por ejemplo rellenar_info) que llamemos cada vez que sea necesario, así se rellenará la información para todas las operaciones desarrolladas.
+
+### 6. Tratamiento de errores
 
 Queremos que la calculadora sea un poco más robusta y funcione independientemente de lo que introduzca el usuario. Para ello tendremos que validar la entrada antes de hacer las operaciones y mostrar un error en caso de que lo introducido por el usuario no sea válido.
 
