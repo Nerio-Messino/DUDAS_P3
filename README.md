@@ -15,9 +15,7 @@ Practicar con expresiones básicas, variables, asignaciones, if…else, switch�
 
 En esta entrega vamos a desarrollar una aplicación web de calculadora, para ello utilizaremos HTML y JavaScript (CSS se deja opcional). La calculadora que vamos a implementar es como esta:
 
-<p align="center">
-  <img width="187" height="264" style="border: 1px solid grey;" src="https://kikeservicenow.neocities.org/Captura.PNG">
-</p>
+
 
 ## Descargar el código del proyecto
 
