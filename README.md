@@ -1,6 +1,5 @@
 
 <img  align="left" width="150" style="float: left;" src="https://www.upm.es/sfs/Rectorado/Gabinete%20del%20Rector/Logos/UPM/CEI/LOGOTIPO%20leyenda%20color%20JPG%20p.png">
-<img  align="right" width="60" style="float: right;" src="http://www.dit.upm.es/figures/logos/ditupm-big.gif">
 
 <br/><br/><br/>
 
@@ -14,10 +13,10 @@ Practicar con expresiones básicas, variables, asignaciones, if…else, switch�
 
 ## Descripción de la práctica
 
-En esta entrega vamos a desarrollar una aplicación web de calculadora. Para comenzar el desarrollo partimos de la versión básica de la calculadora, cuyo código se proporciona al alumno. Las instrucciones para obtener este código están en el siguiente apartado. Sobre éste, el alumno tendrá que implementar las operaciones que faltan, las cuales se indican en el apartado "Tareas".
+En esta entrega vamos a desarrollar una aplicación web de calculadora, para ello utilizaremos HTML y JavaScript (CSS se deja opcional). La calculadora que vamos a implementar es como esta:
 
 <p align="center">
-  <img width="187" height="264" style="border: 1px solid grey;" src="https://sonsoleslp.neocities.org/screenshot.png">
+  <img width="187" height="264" style="border: 1px solid grey;" src="https://kikeservicenow.neocities.org/Captura.PNG">
 </p>
 
 ## Descargar el código del proyecto
@@ -38,39 +37,31 @@ $ cd P3_Calculadora_JS
 
 Para superar esta entrega, el alumno tendrá que implementar las siguientes funcionalidades:
 
-### 1. Campo informativo:
+### 1. Desarrollo de la estructura de página básica y campo input:
+* Cree en el directorio del proyecto un archivo nuevo y pongale el nombre "index.html". En dicho archivo cree la estructura básica de una página HTML (html, head, body)
+* Añada un h2 con la clase "cabecera" (puede usar esta clase para añadir alguna propiedad css a este h2) y texto "Calculadora de CORE"
+* Añada un campo input de tipo texto y de id "pantalla" 
 
-Añada al documento HTML un nuevo elemento mediante la etiqueta 	&lt;h2&gt; con identificador &quot;info&quot;, clase &quot;grande&quot;, un atributo &quot;title&quot; con valor &quot;Info sobre el número&quot; y contenido inicialmente &quot;Info sobre el número&quot;.
-
-El contenido de dicho elemento &lt;h2&gt; se debe actualizar cada vez que se hace un cálculo en la calculadora. En este primer paso tan solo tenemos la función &quot;cuadrado&quot;, así que solo se actualizará el campo informativo cuando el usuario haga click en el botón &quot;cuadrado&quot;. Su contenido debe ser &quot;Info: El resultado es menor que 100&quot;, &quot;Info: El resultado está entre 100 y 200&quot; o &quot;Info: El resultado es superior a 200&quot; según sea el resultado del cálculo que muestre el input.
-
-Aunque en esta primera funcionalidad solo hay una funcionalidad en la calculadora, el resto de apartados pedirá que se realicen más botones en la calculadora y el campo informativo debe seguir funcionando, esto es, mostrando un mensaje u otro según el resultado del cálculo ejecutado. Así que recomendamos hacer esta funcionalidad en una función específica (de nombre por ejemplo rellenar_info) que llamemos cada vez que sea necesario.
 
 ### 2. Operaciones unitarias:
-  * Añada un nuevo botón a la calculadora junto al que ya tiene. Este botón tendrá un id &quot;modulo&quot; y llamará a una función mod() que debe crear usted. Dicha función calcula el módulo del número X introducido en el input, es decir si es número es positivo lo deja como está y si es negativo devuelve como resultado -X
-
-  * Añada un nuevo botón a la calculadora junto al que ya tiene. Este botón tendrá un id &quot;factorial&quot; y llamará a una función fact() que debe crear usted. Dicha función calcula el factorial del número X introducido en el input. Factorial = X\*(X-1)\*(X-2)\*…\*3\*2\*1, (calcularlo con un bucle for)
+* Añada un botón (button) que tenga el id "cuadrado" que llama a una función de nombre cuadrado() que calcula el cuadrado del número que el usuario ha escrito en el campo input y escribe el resultado en el mismo input.
+  * Añada un nuevo botón a la calculadora. Este botón tendrá un id &quot;factorial&quot; y llamará a una función fact(). Dicha función calcula el factorial del número X introducido en el input y pone el resultado del cálculo en el mismo input. Factorial = X\*(X-1)\*(X-2)\*…\*3\*2\*1, (calcularlo con un bucle for)
 
 ### 3. Operaciones binarias:
-
 Las operaciones binarias (suma, resta, multiplicación, división, resto y potencia) consisten en dos operandos, un operador y se debe pulsar el signo igual para obtener el resultado. El funcionamiento sería como el de cualquier calculadora. Se introduce un primer número, se pulsa la operación, se introduce un segundo número y se pulsa el signo igual.
 
 Consejos para el desarrollo: Tenemos dos pulsaciones a botones. Primera, al pulsar cualquier operador binario, debe invocarse una función, que guarde en variables globales, tanto el número tecleado en el input, como un string indicando el operador pulsado (las variables globales son visibles dentro de todas las funciones del script y puedan utilizarse para pasar valores de una función a otra). Al pulsar el botón con el signo &quot;_=&quot;_ debe invocarse una nueva función que calcule el resultado, realizando la operación indicada por el operador guardado, utilizando el primer número (guardado en la variable global) y el segundo número que debe estar en el input.
 
-  * Añada un nuevo operador binario para hacer una multiplicación y otro para hacer una suma (el resto de operadores binarios se dejan opcionales). Con esto aparecen 3 botones nuevos. El primero debe tener id &quot;multiplicacion&quot; y llamar a una función mul() que como se ha explicado guarda el valor del input y el operador (en este caso multiplicación) en variables globales. El segundo debe tener el id &quot;suma&quot; y llamar a la función add() que guardará también lo necesario. El tercero debe tener el id &quot;igual&quot; y llamar a la función eq() que hará el cálculo adecuado según se haya pulsado antes en multiplicar o sumar y mostrará el resultado calculado en el input. La función eq() si se pulsa repetidamente no hace nada, es decir solo hace el cálculo si se ha usado antes la multiplicación o la suma.
+  * Añada un nuevo operador binario para hacer una suma, una resta, una multiplicación y una división. Con esto aparecen 4 botones para operaciones nuevas y un botón adicional de "igual". Los botones de operaciones deben tener los ids siguientes: "suma" "resta" "multiplicacion" y "division" (estos últimos sin acento, importante). Estos botones llaman a funciones que deben tener los siguientes nombres add, sub, mul, div. Estas funciones guardan el valor del input y el operador pulsado en variables globales. El botón igual debe tener el id "igual" y llamar a una función eq() que hará el cálculo adecuado según se haya pulsado antes en sumar, restar, multiplicar o dividir y mostrará el resultado calculado en el input. La función eq() si se pulsa repetidamente no hace nada, es decir solo hace el cálculo si se ha usado antes adecuadamente una operación.
 
-### 4. Operaciones en formato CSV (Comma Separated Values)
 
-La calculadora debe incluir operaciones con varios operandos en formato CSV, es decir valores separados por comas, por ejemplo &quot;5,7,9,1&quot;. Añada cuatro nuevos botones, uno para hacer el sumatorio, otro que ordena la lista de números provista, otro que invierte la lista y un último que quita los dos últimos elementos.
+### 4. Campo informativo:
 
-  * El botón 'sumatorio' tiene que tener un id &quot;sumatorio&quot; y llamar a una función sumatorio() que calcula la suma de los elementos introducidos en el input. Para un input relleno con &quot;5,7,9,1&quot; al hacer click en el botón &quot;sumatorio&quot; el input pasaría a tener el valor 22 (la suma de todos los números 5+7+9+1).
+Añada al documento HTML un nuevo elemento mediante la etiqueta 	&lt;h2&gt; con identificador &quot;info&quot;, clase &quot;grande&quot;, un atributo &quot;title&quot; con valor &quot;Info sobre el número&quot; y contenido inicialmente &quot;Info sobre el número&quot;.
 
-  * El botón 'ordenar' tiene que tener un id &quot;ordenar&quot; y llamar a una función ordenar() que ordena (en orden ascendente) los elementos introducidos en el input. Para un input relleno con &quot;5,7,9,1&quot; al hacer click en el botón &quot;ordenar&quot; el input pasaría a tener el valor &quot;1,5,7,9&quot;.
-  Cuidado en esta función ya que el método sort() de los arrays en JavaScript ordena strings con lo que 100 será menor que 2. Es necesario pasarle a la función sort() como callback una función que haga la comparación con números (ver: [https://alligator.io/js/array-sort-numbers/](https://alligator.io/js/array-sort-numbers/)).
+El contenido de dicho elemento &lt;h2&gt; se debe actualizar cada vez que se hace un cálculo en la calculadora. Su contenido debe ser &quot;Info: El resultado es menor que 100&quot;, &quot;Info: El resultado está entre 100 y 200&quot; o &quot;Info: El resultado es superior a 200&quot; según sea el resultado del cálculo que muestre el input.
 
-  * El botón 'revertir' tiene que tener un id &quot;revertir&quot; y llamar a una función revertir() que invierte el orden de los elementos introducidos en el input. Para un input relleno con &quot;5,7,9,1&quot; al hacer click en el botón &quot;revertir&quot; el input pasaría a tener el valor &quot;1,9,7,5&quot;.
-
-  * El botón 'quitar' tiene que tener un id &quot;quitar&quot; y llamar a una función quitar() que quita el último número y la coma de los introducidos en el input. Para un input relleno con &quot;5,7,9,1&quot; al hacer click en el botón &quot;quitar&quot; el input pasaría a tener el valor &quot;5,7,9&quot;, para un input &quot;43,2,256,4543&quot; quedaría &quot;43,2,256&quot;.
+Recomendamos hacer esta funcionalidad en una función específica (de nombre por ejemplo rellenar_info) que llamemos cada vez que sea necesario, así se rellenará la información para todas las operaciones desarrolladas. No reescriba el código que hace esta funcionalidad dentro de cada método, para eso nos definimos esta nueva función y la llamamos cuando haga falta, así si la modificamos o tenemos algún error el código está bien encapsulado, está una sola vez.
 
 ### 5. Tratamiento de errores
 
@@ -84,11 +75,15 @@ Queremos que la calculadora sea un poco más robusta y funcione independientemen
 
 ## Consideraciones adicionales y recomendaciones
 
-Todas las funciones que se definan y utilicen deben utilizar la notación arrow.
+Todas las funciones que se definan y utilicen deben utilizar la notación arrow. Todas las funciones deben tener el nombre que se ha pedido en el enunciado, si a la función de multiplicación por ejemplo la llamamos "multi" el autocorector no la encontrará y no nos dará los puntos. Lo mismo ocurre con los textos que se pide en los botones y campos informativos, Ponga exáctamente lo que se pide respetando mayúsculas y acentos.
 
 Se recomienda añadir algún separador adicional a los grupos de botones como muestra la imagen de ejemplo de la calculadora, así como un poco de CSS para darle algo de estilo.
 
 El texto que contienen los botones queda a elección del alumno. Es decir el botón suma podrá contener la palabra suma o el signo +, etc.
+
+Se puede crear una función adicional "vaciar" con el contenido document.getElementById("pantalla").value = ""; y llamarla al hacer click en los botones de operaciones binarias para borrar el contenido de la pantalla antes de que el usuario escriba el segundo número para facilitar el uso de la calculadora. También podría llamar a esta función cada vez que se hace click en el campo input de id "pantalla" añadiéndoles onclick="vaciar()" en su definición. 
+
+De cara al examen piense en qué ha aprendido y qué cosas podría modificar y controlar de la práctica. Por ejemplo añadir un botón que tras pulsarlo tres veces oculta la cabecera h2 o la pantalla. Añadir un segundo input y un botón que sirva para comparar los dos números que hay en los inputs. Un botón "añadir a la lista" que va añadiendo a un array lo que hay en la pantalla cada vez que se pulsa y muestra el contenido del array en una lista (ul-li), etc.
 
 
 ## Prueba de la práctica 
