@@ -40,11 +40,11 @@ Para superar esta entrega, el alumno tendrá que implementar las siguientes func
 ### 1. Desarrollo de la estructura de página básica y campo input:
 * Cree en el directorio del proyecto un archivo nuevo y pongale el nombre "index.html". En dicho archivo cree la estructura básica de una página HTML (html, head, body)
 * Añada un h2 con la clase "cabecera" (puede usar esta clase para añadir alguna propiedad css a este h2) y texto "Calculadora de CORE"
-* Añada un campo input de tipo texto y de id "pantalla" 
+* Añada un campo input de tipo texto y de id "pantalla"
 
 
 ### 2. Operaciones unitarias:
-* Añada un botón (button) que tenga el id "cuadrado" que llama a una función de nombre cuadrado() que calcula el cuadrado del número que el usuario ha escrito en el campo input y escribe el resultado en el mismo input.
+* Añada un botón (button) que tenga el id "cuadrado" que llama a una función de nombre sq() que calcula el cuadrado del número que el usuario ha escrito en el campo input y escribe el resultado en el mismo input.
 * Añada un nuevo botón a la calculadora. Este botón tendrá un id &quot;factorial&quot; y llamará a una función fact(). Dicha función calcula el factorial del número X introducido en el input y pone el resultado del cálculo en el mismo input. Factorial = X\*(X-1)\*(X-2)\*…\*3\*2\*1, (calcularlo con un bucle for)
 
 ### 3. Operaciones binarias:
@@ -80,14 +80,14 @@ Se recomienda añadir algún separador adicional a los grupos de botones como mu
 
 El texto que contienen los botones queda a elección del alumno. Es decir el botón suma podrá contener la palabra suma o el signo +, etc.
 
-Se puede crear una función adicional "vaciar" con el contenido document.getElementById("pantalla").value = ""; y llamarla al hacer click en los botones de operaciones binarias para borrar el contenido de la pantalla antes de que el usuario escriba el segundo número para facilitar el uso de la calculadora. También podría llamar a esta función cada vez que se hace click en el campo input de id "pantalla". 
+Se puede crear una función adicional "vaciar" con el contenido document.getElementById("pantalla").value = ""; y llamarla al hacer click en los botones de operaciones binarias para borrar el contenido de la pantalla antes de que el usuario escriba el segundo número para facilitar el uso de la calculadora. También podría llamar a esta función cada vez que se hace click en el campo input de id "pantalla".
 
 De cara al examen piense en qué ha aprendido y qué cosas podría modificar y controlar de la práctica. Por ejemplo añadir un botón que tras pulsarlo tres veces oculta la cabecera h2 o la pantalla. Añadir un segundo input y un botón que sirva para comparar los dos números que hay en los inputs. Un botón "añadir a la lista" que va añadiendo a un array lo que hay en la pantalla cada vez que se pulsa y muestra el contenido del array en una lista (ul-li), etc.
 
 
-## Prueba de la práctica 
+## Prueba de la práctica
 
-Para ayudar al desarrollo, se provee una herramienta de autocorrección que prueba las distintas funcionalidades que se piden en el enunciado. Para utilizar esta herramienta debes tener node.js (y npm) ([https://nodejs.org/es/](https://nodejs.org/es/)) y Git instalados. 
+Para ayudar al desarrollo, se provee una herramienta de autocorrección que prueba las distintas funcionalidades que se piden en el enunciado. Para utilizar esta herramienta debes tener node.js (y npm) ([https://nodejs.org/es/](https://nodejs.org/es/)) y Git instalados.
 
 Para instalar y hacer uso de la [herramienta de autocorrección](https://www.npmjs.com/package/autocorector) en el ordenador local, ejecuta los siguientes comandos en el directorio del proyecto:
 
@@ -119,4 +119,3 @@ $ npx autocorector --upload
 ```
 
 La herramienta de autocorrección preguntará por el correo del alumno y el token de Moodle. En el enlace [https://www.npmjs.com/package/autocorector](https://www.npmjs.com/package/autocorector) se proveen instrucciones para encontrar dicho token.
-
