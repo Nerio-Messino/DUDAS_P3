@@ -91,14 +91,16 @@ De cara al examen piense en qué ha aprendido y qué cosas podría modificar y c
 Adicionalmente a pasar la batería de tests y obtener una nota hay que hacer dos capturas de pantalla. Dichas capturas de pantalla se tienen que colocar en formato png, jpg o pdf en el directorio de nombre “miscapturas” situado dentro del directorio raiz de la práctica. El autocorector las subirá junto con el código de la práctica y el resto de las evidencias a Moodle. 
 Estas capturas son obligatorias y deben ser personales, en ellas se debe ver el resultado de ejecutarlas en tu ordenador y que se vean claramente los datos solicitados. Si se entrega la captura de un compañero eso es considerado copia de la práctica, con un suspenso automático de toda la asignatura. Y si se entrega algo que no sea una captura como la solicitada (un fichero de imagen cualquiera para poder subir la nota ya que el autocorector solo comprueba que existan, no puede comprobar el contenido) el autocorector dejará subir la nota, pero uno de los profesores de la asignatura revisará estas capturas y pondrá inmediatamente un cero en la práctica. 
 Las capturas son las siguientes:
-### 1. Captura de pantalla de la calculadora (el estilo puede variar si aplicamos algo de css por supuesto):
+### 1. Captura de pantalla de la calculadora:
+el estilo puede variar si aplicamos algo de css por supuesto.
 <kbd>
-<img src="https://user-images.githubusercontent.com/52309/211210184-33ab79d6-f018-436d-9e5a-49851a5b11f9.png" alt="drawing" width="500"/>
+<img src="https://user-images.githubusercontent.com/52309/211210184-33ab79d6-f018-436d-9e5a-49851a5b11f9.png" alt="drawing" width="200"/>
 </kbd>
 
 ### 2. Captura de pantalla donde se vea que al usar la calculadora pone "El resultado es superior a 200"
+Si no se ha conseguido dicha funcionalidad, aportar alguna captura donde se vea la calculadora funcionando:
 <kbd>
-<img src="https://user-images.githubusercontent.com/52309/211210217-a38a1740-d266-42f6-b071-4d7ff58fd8b7.png" alt="drawing" width="500"/>
+<img src="https://user-images.githubusercontent.com/52309/211210217-a38a1740-d266-42f6-b071-4d7ff58fd8b7.png" alt="drawing" width="200"/>
 </kbd>
 
 
