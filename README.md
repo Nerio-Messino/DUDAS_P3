@@ -98,12 +98,8 @@ El estilo puede variar si aplicamos algo de css por supuesto.
 <img src="https://user-images.githubusercontent.com/52309/211210184-33ab79d6-f018-436d-9e5a-49851a5b11f9.png" alt="drawing" width="200"/>
 </kbd>
 
-### 2. Captura de pantalla donde se vea que al usar la calculadora pone "El resultado es superior a 200"
-Si no se ha conseguido dicha funcionalidad, aportar alguna captura donde se vea la calculadora funcionando:
+### 2. Captura de pantalla de las developer tools (de cualquier navegador) en la que se vea el html de la página, con algunas secciones abiertas.
 
-<kbd>
-<img src="https://user-images.githubusercontent.com/52309/211210217-a38a1740-d266-42f6-b071-4d7ff58fd8b7.png" alt="drawing" width="200"/>
-</kbd>
 
 
 ## Pruebas con el autocorector
