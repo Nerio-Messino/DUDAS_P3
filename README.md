@@ -92,6 +92,7 @@ El estilo puede variar si aplicamos algo de css por supuesto.
 <kbd>
 <img src="https://user-images.githubusercontent.com/52309/211210184-33ab79d6-f018-436d-9e5a-49851a5b11f9.png" alt="drawing" width="200"/>
 </kbd>
+
 - Captura 2: Captura de pantalla de las developer tools (de cualquier navegador) en la que se vea el html de la página, con algunas secciones abiertas.
 
 ## Instrucciones para la Entrega y Evaluación.
