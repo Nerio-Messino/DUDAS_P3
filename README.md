@@ -103,4 +103,18 @@ Instrucciones [aquí](https://github.com/CORE-UPM/Instrucciones_Practicas/blob/m
 
 ## Rúbrica
 
+Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la parte indicada es correcta:
 
+- **5%:** Existe la estructura de la cabecera y campo input.
+- **20%:** Las operaciones unitarias funcionan correctamente.
+  - **5%:** La función cuadrado funciona correctamente.
+  - **5%:** La función raiz funciona correctamente.
+  - **10%:** La función factorial funciona correctamente.
+- **40%:** Las operaciones unitarias funcionan correctamente.
+  - **10%:** La función suma funciona correctamente.
+  - **10%:** La función resta funciona correctamente.
+  - **10%:** La función multiplicación funciona correctamente.
+  - **10%:** La función división funciona correctamente.
+- **15%:** El campo informativo muestra los mensajes.
+- **20%:** Los errores se tratan correctamente
+Si pasa todos los tests se dará la máxima puntuación.
