@@ -14,10 +14,11 @@ Practicar con expresiones b谩sicas, variables, asignaciones, if鈥lse, switch鈥
 ## Descripci贸n de la pr谩ctica
 
 En esta entrega vamos a desarrollar una aplicaci贸n web de calculadora, para ello utilizaremos HTML y JavaScript (CSS se deja opcional). La calculadora que vamos a implementar es como esta:
-<p align="center">
-  <img width="187" height="264" style="border: 1px solid grey;" src="https://kikeservicenow.neocities.org/Captura2.PNG">
-</p>
+<br/>
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/47325335/215490221-f0a4abde-acd2-47ef-b3db-bdea4a095989.png" alt="drawing" width="200"/>
+</p>
 
 ## Descargar el c贸digo del proyecto
 
@@ -91,10 +92,15 @@ Capturas a entregar con esta pr谩ctica:
 El estilo puede variar si aplicamos algo de css por supuesto.
 
 <kbd>
-<img src="https://user-images.githubusercontent.com/52309/211210184-33ab79d6-f018-436d-9e5a-49851a5b11f9.png" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/47325335/215490804-b4280f90-c9a4-4f5a-a8e3-be99fc421b1b.png" alt="drawing" width="250"/>
 </kbd>
 
+
 - Captura 2: Captura de pantalla de las developer tools (de cualquier navegador) en la que se vea el html de la p谩gina, con algunas secciones abiertas.
+
+<kbd>
+<img src="https://user-images.githubusercontent.com/47325335/215490538-aeb9a926-2f29-4ddf-bb05-961a0e037602.png" alt="drawing" width="250"/>
+</kbd>
 
 ## Instrucciones para la Entrega y Evaluaci贸n.
 
