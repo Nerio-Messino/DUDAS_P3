@@ -36,6 +36,7 @@ Para superar esta entrega, el alumno tendrá que implementar las siguientes func
 ### 2. Operaciones unitarias:
 * Añada un botón (button) que tenga el id "cuadrado" que llama a una función de nombre sq() que calcula el cuadrado del número que el usuario ha escrito en el campo input y escribe el resultado en el mismo input.
 * Añada un nuevo botón a la calculadora. Este botón tendrá un id &quot;factorial&quot; y llamará a una función fact(). Dicha función calcula el factorial del número X introducido en el input y pone el resultado del cálculo en el mismo input. Factorial = X\*(X-1)\*(X-2)\*…\*3\*2\*1, (calcularlo con un bucle for)
+* Añada un botón (button) que tenga el id "raiz" que llama a una función de nombre sqr() que calcula la raíz del número que el usuario ha escrito en el campo input y escribe el resultado en el mismo input. La función raíz se puede acceder mediante Math.sqrt(value);
 
 ### 3. Operaciones binarias:
 Las operaciones binarias (suma, resta, multiplicación, división, resto y potencia) consisten en dos operandos, un operador y se debe pulsar el signo igual para obtener el resultado. El funcionamiento sería como el de cualquier calculadora. Se introduce un primer número, se pulsa la operación, se introduce un segundo número y se pulsa el signo igual.
