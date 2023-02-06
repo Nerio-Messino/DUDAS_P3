@@ -356,7 +356,7 @@ describe('4. CAMPO INFORMATIVO', function() {
         }
       });
     it('Comprobando tratamiento de errores con el cuadrado', async function () {
-        this.score = 0.4;
+        this.score = 0.2;
         this.msg_ok = `Funcionalidad comprobada correctamente`;
 
         this.msg_err = "La funcionalidad de tratamiento de errores no funciona correctamente al usar el operador cuadrado.";
@@ -366,7 +366,7 @@ describe('4. CAMPO INFORMATIVO', function() {
     });
 
     it('Comprobando tratamiento de errores con el factorial', async function () {
-        this.score = 0.4;
+        this.score = 0.2;
         this.msg_ok = `Funcionalidad comprobada correctamente`;
 
         this.msg_err = "La funcionalidad de tratamiento de errores no funciona correctamente al usar el factorial.";
@@ -376,7 +376,7 @@ describe('4. CAMPO INFORMATIVO', function() {
     });
 
     it('Comprobando tratamiento de errores con la multiplicacion', async function () {
-        this.score = 0.4;
+        this.score = 0.2;
         this.msg_ok = `Funcionalidad comprobada correctamente`;
 
         this.msg_err = "La funcionalidad de tratamiento de errores no funciona correctamente al usar la multiplicación.";
@@ -386,7 +386,7 @@ describe('4. CAMPO INFORMATIVO', function() {
     });
 
     it('Comprobando tratamiento de errores con el igual', async function () {
-        this.score = 0.4;
+        this.score = 0.2;
         this.msg_ok = `Funcionalidad comprobada correctamente`;
 
         this.msg_err = "La funcionalidad de tratamiento de errores no funciona correctamente al usar el igual.";
@@ -398,7 +398,7 @@ describe('4. CAMPO INFORMATIVO', function() {
     });
 
     it('Comprobando tratamiento de errores con la suma', async function () {
-        this.score = 0.4;
+        this.score = 0.2;
         this.msg_ok = `Funcionalidad comprobada correctamente`;
 
         this.msg_err = "La funcionalidad de tratamiento de errores no funciona correctamente al usar la suma.";
@@ -406,6 +406,24 @@ describe('4. CAMPO INFORMATIVO', function() {
         [error_nav, resp] = await Utils.to(browser.click('#suma'));
         browser.assert.input("#pantalla", "Error");
     });
+
+      it('Comprobando la funcionalidad acumulador en la suma', async function () {
+          this.score = 1;
+          this.msg_ok = `Funcionalidad comprobada correctamente`;
+
+          this.msg_err = "No se encuentra el botón con id 'suma'";
+          browser.assert.element('button#suma');
+          this.msg_err = "No se encuentra el botón con id 'igual'";
+          browser.assert.element('button#igual');
+          this.msg_err = "El acumulador no funciona correctamente al usar la suma.";
+          [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 2));
+          [error_nav, resp] = await Utils.to(browser.click('#suma'));
+          [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 3));
+          [error_nav, resp] = await Utils.to(browser.click('#suma'));
+          [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 8));
+          [error_nav, resp] = await Utils.to(browser.click('#igual'));
+          browser.assert.input("#pantalla", 13);
+      });
 
   });
 

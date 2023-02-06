@@ -62,6 +62,12 @@ Queremos que la calculadora sea un poco más robusta y funcione independientemen
 
   La calculadora debe soportar números enteros y decimales con el punto (positivos y negativos).
 
+### 6. Sumas encadenadas
+
+Para agilizar el funcionamiento de la calculadora, se va a implementar una funcionalidad nueva que permita realizar varias sumas seguidas. El usuario podrá pulsar la combinación 5 + 5 + 5 = y obtener el resultado 15 en lugar de 
+tener que introducir 5 + 5 = y a continuación + 5 = para obtener el resultado final. Solo se pide implementar esta funcionalidad para la suma. No es obligatorio mostrar en pantalla los resultados intermedios pero al pulsar el botón = se ha de mostrar el resultado final en pantalla.
+
+Consejos para el desarrollo: Piense como puede comprobar si la operación anterior ha sido otra suma y como se ha de gestionar esta situación. Tenga cuidado al guardar el valor de los resultados intermedios, puesto que puede sobrescribir el valor al realizar la siguiente suma.
 ## Consideraciones adicionales y recomendaciones
 
 IMPORTANTE: Se deben añadir los eventos a los botones utilizando addEventListener. Todas las funciones que se definan deben emplear la notación arrow. Todas las funciones deben tener el nombre que se ha pedido en el enunciado, si a la función de multiplicación por ejemplo la llamamos "multi" el autocorector no la encontrará y no nos dará los puntos. Lo mismo ocurre con los textos que se pide en los botones y campos informativos, Ponga exáctamente lo que se pide respetando mayúsculas y acentos.
@@ -122,5 +128,6 @@ Se puntuará el ejercicio a corregir sumando el % indicado a la nota total si la
   - **10%:** La función multiplicación funciona correctamente.
   - **10%:** La función división funciona correctamente.
 - **15%:** El campo informativo muestra los mensajes.
-- **20%:** Los errores se tratan correctamente
+- **10%:** Los errores se tratan correctamente
+- **10%:** La función suma actúa como acumulador.
 Si pasa todos los tests se dará la máxima puntuación.
