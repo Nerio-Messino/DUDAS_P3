@@ -5,7 +5,7 @@
 
 # Entrega 3 - Calculadora JS
 
-Versión: 25 de Enero de 2023
+Versión: 13 de Febrero de 2023
 
 ## Objetivo
 
@@ -62,12 +62,13 @@ Queremos que la calculadora sea un poco más robusta y funcione independientemen
 
   La calculadora debe soportar números enteros y decimales con el punto (positivos y negativos).
 
-### 6. Sumas encadenadas
+### 6. Operadores encadenados
 
-Para agilizar el funcionamiento de la calculadora, se va a implementar una funcionalidad nueva que permita realizar varias sumas seguidas. El usuario podrá pulsar la combinación 5 + 5 + 5 = y obtener el resultado 15 en lugar de 
-tener que introducir 5 + 5 = y a continuación + 5 = para obtener el resultado final. Solo se pide implementar esta funcionalidad para la suma. No es obligatorio mostrar en pantalla los resultados intermedios pero al pulsar el botón = se ha de mostrar el resultado final en pantalla.
+Para agilizar el funcionamiento de la calculadora, se va a implementar una funcionalidad nueva que permita realizar varias operaciones seguidas. El usuario podrá pulsar la combinación 5 + 3 * 4 = y obtener el resultado 32 en lugar de 
+tener que introducir 5 + 3 = y a continuación * 4 = para obtener el resultado final. No es obligatorio mostrar en pantalla los resultados intermedios pero al pulsar el botón = se ha de mostrar el resultado final en pantalla.
 
-Consejos para el desarrollo: Piense como puede comprobar si la operación anterior ha sido otra suma y como se ha de gestionar esta situación. Tenga cuidado al guardar el valor de los resultados intermedios, puesto que puede sobrescribir el valor al realizar la siguiente suma.
+Consejos para el desarrollo: Piense como puede saber cuál ha sido el último operador que se pulsó y óomo se ha de gestionar esta situación. Tenga cuidado al guardar el valor de los resultados intermedios, puesto que puede sobrescribir el valor al realizar la siguiente operación.
+
 ## Consideraciones adicionales y recomendaciones
 
 IMPORTANTE: Se deben añadir los eventos a los botones utilizando addEventListener. Todas las funciones que se definan deben emplear la notación arrow. Todas las funciones deben tener el nombre que se ha pedido en el enunciado, si a la función de multiplicación por ejemplo la llamamos "multi" el autocorector no la encontrará y no nos dará los puntos. Lo mismo ocurre con los textos que se pide en los botones y campos informativos, Ponga exáctamente lo que se pide respetando mayúsculas y acentos.
