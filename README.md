@@ -67,7 +67,7 @@ Queremos que la calculadora sea un poco más robusta y funcione independientemen
 Para agilizar el funcionamiento de la calculadora, se va a implementar una funcionalidad nueva que permita realizar varias operaciones seguidas. El usuario podrá pulsar la combinación 5 + 3 * 4 = y obtener el resultado 32 en lugar de 
 tener que introducir 5 + 3 = y a continuación * 4 = para obtener el resultado final. No es obligatorio mostrar en pantalla los resultados intermedios pero al pulsar el botón = se ha de mostrar el resultado final en pantalla.
 
-Consejos para el desarrollo: Piense como puede saber cuál ha sido el último operador que se pulsó y óomo se ha de gestionar esta situación. Tenga cuidado al guardar el valor de los resultados intermedios, puesto que puede sobrescribir el valor al realizar la siguiente operación.
+Consejos para el desarrollo: Piense como puede saber cuál ha sido el último operador que se pulsó y cómo se ha de gestionar esta situación. Tenga cuidado al guardar el valor de los resultados intermedios, puesto que puede sobrescribir el valor al realizar la siguiente operación.
 
 ## Consideraciones adicionales y recomendaciones
 
