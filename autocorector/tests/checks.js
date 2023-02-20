@@ -22,6 +22,7 @@ function assign(){
           try { window.div = div; } catch (e){}
           try { window.mul = mul; } catch (e){}
           try { window.eq = eq; } catch (e){}
+          try { window.sqr = sqr; } catch (e){}
         })()`);
     } catch(e) {
       console.log("ERROR evaluando funciones creadas en el browser de ZombieJS", e);
@@ -133,9 +134,18 @@ describe("TEST SUITE DE LA Calculadora DE CORE", function () {
 
         this.msg_err = "No se encuentra el botón con id 'factorial'";
         browser.assert.element('button#factorial');
+        /*
+        console.log("BOTON FACTORIAL:");
+        console.log(browser.html("button#factorial"));
+        */
         this.msg_err = "El botón factorial no funciona correctamente";
         [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 6));
         [error_nav, resp] = await Utils.to(browser.click('#factorial'));
+        /*
+        console.log("PANTALLA:");
+        console.log(browser.html("#pantalla"));
+        console.log(browser.querySelector("#pantalla"));
+        */
         browser.assert.input("#pantalla", 720);
         [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 10));
         [error_nav, resp] = await Utils.to(browser.click('#factorial'));
@@ -275,7 +285,7 @@ describe('4. CAMPO INFORMATIVO', function() {
       [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 2));
       [error_nav, resp] = await Utils.to(browser.click('#cuadrado'));
       browser.assert.text("h2#info", "Info: El resultado es menor que 100");
-
+          
       this.msg_err = "El campo info no funciona correctamente para un resultado menor que 100";
       [error_nav, resp] = await Utils.to(browser.fill('#pantalla', 4));
       [error_nav, resp] = await Utils.to(browser.click('#factorial'));
@@ -408,6 +418,7 @@ describe('4. CAMPO INFORMATIVO', function() {
     });
 
       it('Comprobando la funcionalidad acumulador en la suma', async function () {
+          //browser.debug()
           this.score = 1;
           this.msg_ok = `Funcionalidad comprobada correctamente`;
 
