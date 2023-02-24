@@ -7,7 +7,7 @@
     
     <p><input type="text" id="pantalla"></p>
     
-    <button id="cuadrado" onclick="addEventListener(click,CalcularCuadrado )" > x </button>
+    <button id="cuadrado" onclick="addEventListener(click,CalcularCuadrado() )" > x<sub>2</sub> </button>
     
     
     
@@ -18,7 +18,7 @@
        cuadrado=number*number;
        return cuadrado;
       }
-      document.getElementById("pantalla").value = CalcularCuadrado();
+      document.getElementById("pantalla").value = CalcularCuadrado(number);
     </script>
     
    </body>
