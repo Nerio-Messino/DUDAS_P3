@@ -15,7 +15,11 @@
     
     <script type="text/javascript">
       function CalcularFactorial(number){
-
+       let factorial;
+       for (let index = number; index>1; index--){
+         factorial *= index;
+       }
+       return factorial;
       }
       function CalcularRaiz(number){
        let raiz;
