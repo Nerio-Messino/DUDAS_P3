@@ -7,11 +7,16 @@
     
     <p><input type="text" id="pantalla"></p>
     
-    <button id="cuadrado" onclick="addEventListener(click,CalcularCuadrado )" > sq()</button>
+    <button id="cuadrado" onclick="addEventListener(click,CalcularCuadrado )" > x </button>
+    
+    
+    
+    
     <script type="text/javascript">
-      function CalcularCuadrado(){
-       let numero;
-       return pow(numero, 2);
+      function CalcularCuadrado(number){
+       let cuadrado;
+       cuadrado=number*number;
+       return cuadrado;
       }
       document.getElementById("pantalla").value = CalcularCuadrado();
     </script>
